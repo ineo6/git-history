@@ -3,5 +3,5 @@
   "repo": "git@gitee.com:ineo6/ineo6.git",
   "username": "deployBot",
   "email": "deployBot@bot.com",
-  "branch": "master"
+  "branch": "gh-pages"
 }
