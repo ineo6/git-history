@@ -1,5 +1,6 @@
 import netlify from "netlify-auth-providers";
 import React from "react";
+import queryString from "query-string";
 import versioner from "./versioner";
 import { SOURCE } from "./sources";
 
@@ -10,6 +11,12 @@ function isLoggedIn() {
 }
 
 function getUrlParams() {
+  const parsed = queryString.parse(window.location.search);
+
+  if(!parsed.file){
+    return [];
+  }
+
   const [
     ,
     owner,
@@ -17,7 +24,7 @@ function getUrlParams() {
     action,
     sha,
     ...paths
-  ] = window.location.pathname.split("/");
+  ] = parsed.file.split("/");
 
   if (action !== "commits" && action !== "blob") {
     return [];

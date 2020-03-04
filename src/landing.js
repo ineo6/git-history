@@ -14,7 +14,7 @@ import "./landing.css";
 export default function Landing() {
   const url = `${window.location.protocol}//${
     window.location.host
-  }/babel/babel/blob/master/packages/babel-core/test/browserify.js`;
+  }?file=/babel/babel/blob/master/packages/babel-core/test/browserify.js`;
   return (
     <div className="landing">
       <header
@@ -43,75 +43,75 @@ export default function Landing() {
         <div className="summary">
           <h1>Git History</h1>
           Quickly browse the history of files in any git repo:
-          <ol>
-            <li>
-              Go to a file in <strong>GitHub</strong> (or{" "}
-              <strong>GitLab</strong>, or <strong>Bitbucket</strong>)
-            </li>
-            <li>
-              Replace <i>github.com</i> with <i>github.githistory.xyz</i>
-            </li>
-            <li>There's no step three</li>
-          </ol>
+          {/*<ol>*/}
+          {/*  <li>*/}
+          {/*    Go to a file in <strong>GitHub</strong> (or{" "}*/}
+          {/*    <strong>GitLab</strong>, or <strong>Bitbucket</strong>)*/}
+          {/*  </li>*/}
+          {/*  <li>*/}
+          {/*    Replace <i>github.com</i> with <i>github.githistory.xyz</i>*/}
+          {/*  </li>*/}
+          {/*  <li>There's no step three</li>*/}
+          {/*</ol>*/}
           <a className="button" href={url}>
             Try it
           </a>
-          <p style={{ marginBottom: "7px" }}>Also available as extensions:</p>
-          <div className="extensions">
-            <a
-              href="https://chrome.google.com/webstore/detail/github-history-browser-ex/laghnmifffncfonaoffcndocllegejnf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ChromeLogo height={44} width={44} />
-            </a>
-            <a
-              href="https://addons.mozilla.org/firefox/addon/github-history/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FirefoxLogo height={44} width={44} />
-            </a>
+          {/*<p style={{ marginBottom: "7px" }}>Also available as extensions:</p>*/}
+          {/*<div className="extensions">*/}
+          {/*  <a*/}
+          {/*    href="https://chrome.google.com/webstore/detail/github-history-browser-ex/laghnmifffncfonaoffcndocllegejnf"*/}
+          {/*    target="_blank"*/}
+          {/*    rel="noopener noreferrer"*/}
+          {/*  >*/}
+          {/*    <ChromeLogo height={44} width={44} />*/}
+          {/*  </a>*/}
+          {/*  <a*/}
+          {/*    href="https://addons.mozilla.org/firefox/addon/github-history/"*/}
+          {/*    target="_blank"*/}
+          {/*    rel="noopener noreferrer"*/}
+          {/*  >*/}
+          {/*    <FirefoxLogo height={44} width={44} />*/}
+          {/*  </a>*/}
 
-            <a
-              href="https://github.com/pomber/git-history/tree/master/cli"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <CliLogo height={44} width={44} />
-            </a>
+          {/*  <a*/}
+          {/*    href="https://github.com/pomber/git-history/tree/master/cli"*/}
+          {/*    target="_blank"*/}
+          {/*    rel="noopener noreferrer"*/}
+          {/*  >*/}
+          {/*    <CliLogo height={44} width={44} />*/}
+          {/*  </a>*/}
 
-            <a
-              href="https://marketplace.visualstudio.com/items?itemName=pomber.git-file-history"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <VsCodeLogo height={44} width={44} />
-            </a>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between"
-            }}
-          >
-            <iframe
-              src="https://ghbtns.com/github-btn.html?user=pomber&repo=git-history&type=star&count=true&size=large"
-              title="GitHub Stars"
-              frameBorder="0"
-              scrolling="0"
-              width="160px"
-              height="30px"
-            />
-            <i>
-              by <a href="https://twitter.com/pomber">@pomber</a>
-            </i>
-          </div>
+          {/*  <a*/}
+          {/*    href="https://marketplace.visualstudio.com/items?itemName=pomber.git-file-history"*/}
+          {/*    target="_blank"*/}
+          {/*    rel="noopener noreferrer"*/}
+          {/*  >*/}
+          {/*    <VsCodeLogo height={44} width={44} />*/}
+          {/*  </a>*/}
+          {/*</div>*/}
+          {/*<div*/}
+          {/*  style={{*/}
+          {/*    display: "flex",*/}
+          {/*    alignItems: "center",*/}
+          {/*    justifyContent: "space-between"*/}
+          {/*  }}*/}
+          {/*>*/}
+          {/*  <iframe*/}
+          {/*    src="https://ghbtns.com/github-btn.html?user=pomber&repo=git-history&type=star&count=true&size=large"*/}
+          {/*    title="GitHub Stars"*/}
+          {/*    frameBorder="0"*/}
+          {/*    scrolling="0"*/}
+          {/*    width="160px"*/}
+          {/*    height="30px"*/}
+          {/*  />*/}
+          {/*  <i>*/}
+          {/*    by <a href="https://twitter.com/pomber">@pomber</a>*/}
+          {/*  </i>*/}
+          {/*</div>*/}
         </div>
       </header>
-      <Testimonies />
-      <Backers />
+      {/*<Testimonies />*/}
+      {/*<Backers />*/}
     </div>
   );
 }

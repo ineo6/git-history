@@ -14,10 +14,11 @@ export default function App() {
       <React.Fragment>
         <InnerApp gitProvider={gitProvider} />
         <footer>
-          <a href="https://github.com/pomber/git-history">Git History</a>
+          {/*<a href="https://github.com/pomber/git-history">Git History</a>*/}
+          Modified
           <br />
           by
-          <a href="https://twitter.com/pomber">@pomber</a>
+          <a href="https://github.com/ineo6">@neo</a>
         </footer>
       </React.Fragment>
     );
