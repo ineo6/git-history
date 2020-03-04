@@ -1,7 +1,7 @@
 {
   "directory": "build/",
-  "repo": "git@gitee.com:ineo6/git-history.git",
+  "repo": "git@gitee.com:ineo6/ineo6.git",
   "username": "deployBot",
   "email": "deployBot@bot.com",
-  "branch": "gh-pages"
+  "branch": "master"
 }
