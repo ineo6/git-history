@@ -63,6 +63,11 @@ export function Error({ error, gitProvider }) {
   return (
     <Center>
       <p>Unexpected error. Check the console.</p>
+        <p>
+            Maybe GitHub API rate limit exceeded for your IP (60 requests per hour).
+        </p>
+        <p>Sign in with GitHub for more:</p>
+        <LogInButton />
     </Center>
   );
 }

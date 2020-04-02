@@ -46,7 +46,7 @@ function showLanding() {
 function logIn() {
   // return new Promise((resolve, reject) => {
   var authenticator = new netlify({
-    site_id: "ccf3a0e2-ac06-4f37-9b17-df1dd41fb1a6"
+    site_id: "fb981dc2-5590-4f9b-bd2e-5bdd4b082ad0"
   });
   authenticator.authenticate({ provider: "github", scope: "repo" }, function(
     err,
